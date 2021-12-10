@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=VT323&display=swap");
+
+:root {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font: 1.6rem "VT323", monospace;
+  /* font-family: "Fuzzy Bubbles", cursive; */
+}
+
+.math-games {
+  background: rgb(245, 229, 229);
+  padding: 0.1rem;
+  border-radius: 1rem;
+  box-shadow: 0.2rem 0.5rem 1rem rgb(52, 73, 94);
+  width: 30rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.main-item {
+  text-align: center;
+}
+
+input {
+  margin: 0.5rem 0;
+  border: 0.1rem dashed rgb(51, 51, 51);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  background: none;
+  outline: none;
+  font: 3rem "VT323", monospace;
+  color: black;
+  text-align: center;
+}
+
+.blue {
+  color: rgb(0, 0, 255);
+}
+
+.red {
+  color: rgb(255, 0, 0);
+}
+
+.operator {
+  color: rgb(96, 144, 24);
+}
+
+.math-games span {
+  font: 4.5rem "Fuzzy Bubbles", cursive;
+}
+
+#check-btn {
+  background-color: rgb(26, 188, 156);
+  font: 2.5rem "VT323", monospace;
+  border-bottom: none;
+  border-right: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: rgb(255, 255, 255);
+  box-shadow: 0.2rem 0.5rem 1rem rgb(70, 97, 124);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.items {
+  width: 100%;
+  margin: 1rem 0 1rem 0;
+}
+
+.modal-container {
+  position: absolute;
+  right: 6rem;
+  bottom: 20rem;
+  width: 30rem;
+  height: 10rem;
+  border: 0.2rem solid rgb(85, 85, 85);
+  border-radius: 1rem;
+  padding: 2rem;
+  background: rgb(231, 76, 60);
+  color: white;
+  display: flex;
+  align-items: center;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgb(85, 85, 85);
+  font-size: 3rem;
+  display: none;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  font-weight: bold;
+}
+.close:hover {
+  cursor: pointer;
+}
